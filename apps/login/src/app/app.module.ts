@@ -12,9 +12,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ChatComponent } from './chat/chat.component';
 
 @NgModule({
-  declarations: [AppComponent, AuthenticationComponent],
+  declarations: [AppComponent, AuthenticationComponent, ChatComponent],
   imports: [BrowserModule,  BrowserModule,
      HttpClientModule,
     ReactiveFormsModule,
@@ -29,6 +30,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [AuthenticationComponent],
+  exports: [AuthenticationComponent, ChatComponent],
 })
 export class AppModule {}
