@@ -1,0 +1,28 @@
+<div class="login-box">
+    <div class="logo-wrapper">
+      <img src="../../assets/images/logo.jpeg" alt="" />
+    </div>
+    <div class="header form-row">
+      <label>User Login</label>
+    </div>
+    <div class="description form-row">
+      <span>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </span>
+    </div>
+    <div class="form-input form-row" [formGroup]="loginForm">
+      <input type="text" placeholder="User Name" formControlName="username" />
+      <input type="text" placeholder="Password" formControlName="password" />
+      <input
+        type="button"
+        (click)="getAuthenticationToken()"
+        [disabled]="loginForm.pristine"
+        value="Log In"
+      />
+      <input type="button" value="Don't have an account! Sign Up" />
+    </div>
+    <div class="footer">
+      <label></label>
+    </div>
+  </div>
+  

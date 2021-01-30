@@ -14,7 +14,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "chat-app-front-end",
+            "prefix": "login",
             "style": "camelCase"
           }
         ],
@@ -22,7 +22,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "chat-app-front-end",
+            "prefix": "login",
             "style": "kebab-case"
           }
         ]

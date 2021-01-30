@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "nx",
-    "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points",
+    "postinstall": "ngcc",
     "nx": "nx",
     "start": "ng serve",
     "build": "ng build",
@@ -19,6 +19,7 @@
     "affected:lint": "nx affected:lint",
     "affected:dep-graph": "nx affected:dep-graph",
     "affected": "nx affected",
+    "login": "ng serve login --port=4200",
     "format": "nx format:write",
     "format:write": "nx format:write",
     "format:check": "nx format:check",
@@ -37,7 +38,11 @@
     "@angular/platform-browser": "^11.0.0",
     "@angular/platform-browser-dynamic": "^11.0.0",
     "@angular/router": "^11.0.0",
+    "@angular/service-worker": "^11.0.0",
+    "@fortawesome/angular-fontawesome": "^0.8.1",
     "@nrwl/angular": "11.2.6",
+    "ngx-cookie-service": "^11.0.2",
+    "ngx-toastr": "^13.2.0",
     "rxjs": "~6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "^0.10.2"
